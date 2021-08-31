@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+.textScreen {
+  background-color: rgba(255,255,255,0.7);
+  height: 20vh;
+  width: 60vw!important;
+  position: absolute;
+  top:65%;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.storyScreen {
+  height: 100vh;
+}
+
+.background-image{
+  background-image: url('../../static/images/backgrounds/cityStreet.jpg');
+}
