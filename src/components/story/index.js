@@ -19,14 +19,14 @@ function Story() {
 		return <Choices />
 	}
 	return (
-		<Container className="d-flex flex-column justify-content-center align-items-center storyScreen background-image"
+		<Container className="d-flex flex-column justify-content-center align-items-center background-image"
 			onClick={() => handleNext()}
 		>
 			<Character />
 			<Container
 				className="d-flex flex-column justify-content-center align-items-center rounded-pill textScreen text-center"
 			>
-				<span className="w-75 fs-3">{story[routeIndex].route[storyIndex].text}</span>
+				<span className=" fs-3">{story[routeIndex].route[storyIndex].text}</span>
 			</Container>
 		</Container>
 	)

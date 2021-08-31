@@ -10,7 +10,7 @@ function Game() {
 	const showTitle = useSelector(selectShowTitle)
 	const showStory = useSelector(selectShowStory)
 	return (
-		<Container className="d-flex flex-column justify-content-center align-items-center screen" fluid>
+		<Container className="d-flex flex-column justify-content-center screen" fluid>
 			{showTitle && ( <TittleScreen /> )}
 			{showStory && ( <Story /> )}
 			<Menu />
