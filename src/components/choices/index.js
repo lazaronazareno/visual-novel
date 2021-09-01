@@ -34,15 +34,15 @@ function Choices() {
 		)
 	}
 	return (
-		<Container className="d-flex flex-column justify-content-center align-items-center screen">
-			<Container className="choices d-flex flex-column justify-content-evenly align-items-center">
-				<h1>Llego el momento de tomar una decision!</h1>
-				<h1>Selecciona una opcion y descubre tu destino :</h1>
+		<Container className="choices d-flex flex-column text-center">
+			<h1>Llego el momento de tomar una decision!</h1>
+			<h1>Selecciona una opcion y descubre tu destino :</h1>
+			<Container className="d-flex flex-column w-50 justify-content-evenly">
 				{choices[routeIndex].choice && (
 					choices[routeIndex].choice.map((option, index) => {
 						return (
 							console.log(option.text),
-							<Button variant="outline-dark" className="fs-3" onClick={() => handleRoute(index +1)} size='lg'>{option.text}</Button>
+							<Button variant="outline-dark" onClick={() => handleRoute(index +1)} size='lg'>{option.text}</Button>
 						)
 					})
 				)

@@ -16,7 +16,11 @@ function Story() {
 		dispatch(setStoriesIndex())
 	}
 	if (storyIndex === story[routeIndex].route.length) {
-		return <Choices />
+		return (
+			<Container className="d-flex flex-column justify-content-center text-center h-100 background-image">
+				<Choices />
+			</Container>
+		)
 	}
 	return (
 		<Container className="d-flex flex-column justify-content-center align-items-center background-image"

@@ -19,7 +19,7 @@ function TittleScreen() {
 	
 	return (
 		<Container className="d-flex flex-column justify-content-center align-items-center screen">
-			<Container className="choices d-flex flex-column justify-content-evenly align-items-center">
+			<Container className="choices h-50 d-flex flex-column justify-content-evenly align-items-center">
 				<h1>Welcome to this &quot;try&quot; of Visual Novel</h1>
 				<Container className="d-flex w-50 justify-content-evenly">
 					<Button variant="outline-dark" onClick={() => handleStart()} size='lg'>Start</Button>
